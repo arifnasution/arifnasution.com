@@ -1,0 +1,21 @@
+{
+  "name": "portfoliome",
+  "version": "1.0.0",
+  "description": "Official Web Ucokdev",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "Website",
+    "Jasa web medan",
+    "front-end developer medan",
+    "ucokdev",
+    "sumatera utara"
+  ],
+  "author": "ucokdev",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

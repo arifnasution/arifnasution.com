@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Official Web Ucokdev",
   "main": "index.js",
+  "homepage": "https://arifnasution.github.io/arifnasution.com",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Website",
@@ -17,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0"
   }
 }

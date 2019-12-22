@@ -4,7 +4,8 @@
 
     .btn-line {
         width: 28px; height: 3px; margin: 0 0 5px 0;
-        background: #fff; @include easeOut;
+        background: set-text-color($primary-color); 
+        @include easeOut;
     }
 
     // Rotate Into X with Menu Lines
@@ -97,7 +98,7 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: 20px;
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;

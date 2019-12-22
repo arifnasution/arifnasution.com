@@ -118,9 +118,10 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
+    font-size: .8;
     padding: 0.2rem 1rem;
     background: rgba(0, 139, 148, 0.5); }
 
@@ -154,7 +155,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'bio2 job1 job1' 'bio3 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -167,8 +168,12 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
     text-align: justify; }
+  .about-info .bio2 {
+    grid-area: bio2; }
   .about-info .job-1 {
     grid-area: job1; }
+  .about-info .bio3 {
+    grid-area: bio3; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
@@ -184,6 +189,17 @@ main {
   background: #005157;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about-info h5 {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #ffdc14; }
+  .about-info .titlejob1 {
+    margin-bottom: 1rem;
+    font-weight: 600; }
+  .about-info .bio3 .job {
+    margin-bottom: 1rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -208,12 +224,21 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/profile_picture.jpg");
-      width: 150px;
-      height: 150px; }
+      background: url("../img/profile_picture.jpg") no-repeat -175px 2px;
+      width: 100px;
+      height: 100px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-areas: 'bioimage' 'bio' 'bio2' 'job1' 'bio3' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+    .about-info h5 {
+      color: #ffdc14; }
+    .about-info .bio h3, .about-info .bio p {
+      text-align: center; }
+    .about-info .titlejob1 {
+      margin-bottom: 1rem;
+      font-weight: 600; }
+    .about-info .bio3 .job {
+      margin-bottom: 1rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

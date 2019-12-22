@@ -19,11 +19,11 @@ h1, h2 , h3 {
     margin: 0; font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     &.sm-heading {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; font-size: .8;
         padding: 0.2rem 1rem ;
         background: rgba(lighten($primary-color, 2), 0.5);
     }
@@ -76,7 +76,8 @@ main {
     grid-gap: 30px;
     grid-template-areas: 
     'bioimage bio bio'
-    'job1 job2 job3';
+    'bio2 job1 job1'
+    'bio3 job2 job3';
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
@@ -90,9 +91,17 @@ main {
         grid-area: bio;
         font-size: 1.5rem; text-align: justify;
     }
+
+    .bio2 {
+        grid-area: bio2;
+    }
     
     .job-1 {
         grid-area: job1;
+    }
+
+    .bio3 {
+        grid-area: bio3;
     }
     
     .job-2 {
@@ -116,5 +125,6 @@ main {
     color: set-text-color($primary-color);
     height: 60px;
 }
+
 
 @import 'mobile';

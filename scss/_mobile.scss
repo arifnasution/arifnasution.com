@@ -5,7 +5,26 @@
 
 // Dekstops & Laptops
 @include mediaLg {
-    
+    .about-info {
+      
+      h5 {
+        font-size: 12px; margin-top: 8px;
+        color: $secondary-color;
+      }
+
+      .titlejob1 {
+        margin-bottom: 1rem; font-weight: 600;
+      }
+      
+      .bio3 {
+        .job {
+          margin-bottom: 1rem;
+        }
+      }
+
+      
+
+    }
 }
 
 // Tablets & Small Laptops
@@ -17,6 +36,7 @@
       .lg-heading {
         line-height: 1;
         margin-bottom: 1rem;
+        
       }
     }
   
@@ -42,9 +62,9 @@
         transform: translate3d(100%, 0, 0);
     
         .portrait {
-          background: url('../img/profile_picture.jpg');
-          width: 150px;
-          height: 150px;
+          background: url('../img/profile_picture.jpg') no-repeat -175px 2px;  
+          width: 100px;
+          height: 100px;
         }
       }
 
@@ -52,11 +72,33 @@
         grid-template-areas: 
           'bioimage'
           'bio'
+          'bio2'
           'job1'
+          'bio3'
           'job2'
           'job3';
-
         grid-template-columns: 1fr;
+
+        h5 {
+          color: $secondary-color;
+        }
+
+        .bio  {
+          h3, p {
+            text-align: center;
+          }
+        }
+
+        .titlejob1 {
+          margin-bottom: 1rem; font-weight: 600;
+        }
+        
+        .bio3 {
+          .job {
+            margin-bottom: 1rem;
+          }
+        }
+      
       }
 }
 

@@ -175,7 +175,8 @@ main {
   .about-info .bio3 {
     grid-area: bio3; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    margin-bottom: 1rem; }
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
@@ -217,7 +218,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
@@ -238,6 +239,16 @@ main {
   background: #005157;
   color: #fff;
   height: 60px; }
+
+.animation-page .item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -295,7 +306,9 @@ main {
     .about-info .bio3 .job {
       margin-bottom: 1rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

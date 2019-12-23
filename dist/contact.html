@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
 </head>
@@ -48,23 +49,23 @@
     </header>
 
     <main id="contact">
-        <h1 class="lg-heading">
+        <h1 class="lg-heading" data-aos="fade-right">
             Contact
             <span class="text-secondary">Me</span>
         </h1>
-        <h2 class="sm-heading">
+        <h2 class="sm-heading" data-aos="fade-right">
             Can you call me in...
         </h2>
         <div class="boxes">
-            <div>
+            <div data-aos="slide-up">
                 <span class="text-secondary">Email:</span>
                 marimarifnst@gmail.com
             </div>
-            <div>
+            <div data-aos="slide-up">
                 <span class="text-secondary">Phone:</span>
                 081269087261
             </div>
-            <div>
+            <div data-aos="slide-up">
                 <span class="text-secondary">Address:</span>
                 50 Main st, Aksara
             </div>
@@ -76,5 +77,12 @@
         Copyright &copy; 2019 | Arifnasution.com
     </footer>
     <script src="js/main.js"></script>
+    <!-- AOS Animation Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 </html>

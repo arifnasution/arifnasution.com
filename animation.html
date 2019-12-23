@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Hello Wordl {/Arifnasution.com}</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Animation Page</title>
 </head>
-<body id="bg-img">
+<body>
 
     <header>
         <div class="menu-btn">
@@ -52,30 +53,30 @@
         </nav>
     </header>
 
-    <main id="home">
-        <h1 class="lg-heading">
-            Arif
-            <span class="text-secondary">Nasution</span>
-        </h1>
-        <h2 class="sm-heading">
-            UI/UX Apps Designer, Front-end Devloper, Coding Holic
-        </h2>
-        <div class="icons">
-            <a href="#!">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="#!">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-        </div>
-    </main>
+    <div class="animation-page">
+        <div class="item" data-aos="fade-up">1</div>
+        <div class="item" data-aos="fade-down">2</div>
+        <div class="item" data-aos="fade-right">3</div>
+        <div class="item" data-aos="fade-left">4</div>
 
+        <div class="item" data-aos="zoom-in">5</div>
+        <div class="item" data-aos="zoom-out">6</div>
+
+        <div class="item" data-aos="slide-up">7</div>
+
+        <div class="item" data-aos="flip-up">8</div>
+        <div class="item" data-aos="flip-down">9</div>
+        <div class="item" data-aos="flip-right">10</div>
+        <div class="item" data-aos="flip-left">11</div>
+    </div>
     <script src="js/main.js"></script>
+    
+    <!-- AOS Animation Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 </html>
